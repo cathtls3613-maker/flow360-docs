@@ -11,8 +11,7 @@ export const metadata: Metadata = {
     default: "FLOW360",
     template: "%s | FLOW360",
   },
-  description:
-    "The AI Operating System for Industrial Equipment Distributors.",
+  description: "The AI Operating System for Industrial Equipment Distributors.",
 };
 
 export default function RootLayout({
