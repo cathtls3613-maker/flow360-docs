@@ -1,35 +1,77 @@
+flow360-docs
+
 README.md
 
-00_PROJECT_CHARTER.md
+/project
 
-01_PRODUCT_VISION.md
+    PROJECT_CHARTER.md
 
-02_PRODUCT_PRINCIPLES.md
+    PRODUCT_VISION.md
 
-03_ROADMAP.md
+    PRODUCT_PRINCIPLES.md
 
-04_TARGET_CUSTOMERS.md
+    PRODUCT_ROADMAP.md
 
-05_COMPETITOR_ANALYSIS.md
+/business
 
-06_BUSINESS_RULES.md
+    BUSINESS_RULES.md
 
-07_COSTING_ENGINE.md
+    COSTING_ENGINE.md
 
-08_PRICING_ENGINE.md
+    PRICING_ENGINE.md
 
-09_APPROVAL_ENGINE.md
+    APPROVAL_ENGINE.md
 
-10_AI_ENGINE.md
+    CRM_RULES.md
 
-20_ARCHITECTURE.md
+    INVENTORY_RULES.md
 
-21_DATABASE.md
+    SERVICE_RULES.md
 
-22_API.md
+/design
 
-23_SECURITY.md
+    UX_GUIDELINES.md
 
-24_UI_GUIDELINES.md
+    DESIGN_SYSTEM.md
 
-25_DESIGN_SYSTEM.md
+    SCREEN_LIBRARY.md
+
+    USER_JOURNEYS.md
+
+/technical
+
+    ARCHITECTURE.md
+
+    DATABASE.md
+
+    API.md
+
+    SECURITY.md
+
+    CODING_STANDARD.md
+
+    TESTING_STANDARD.md
+
+    DEPLOYMENT.md
+
+/ai
+
+    CTO.md
+
+    CLAUDE.md
+
+    CHATGPT.md
+
+    CURSOR.md
+
+/prompts
+
+/sprints
+
+Sprint001.md
+
+Sprint002.md
+
+Sprint003.md
+
+...
