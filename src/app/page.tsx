@@ -15,8 +15,11 @@ import {
   WrenchIcon,
 } from "lucide-react";
 
+import Link from "next/link";
+
 import { ModeToggle } from "@/components/mode-toggle";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardDescription,
@@ -106,7 +109,15 @@ export default function HomePage() {
             <span className="text-lg font-bold tracking-tight">FLOW360</span>
             <Badge variant="secondary">Foundation</Badge>
           </div>
-          <ModeToggle />
+          <div className="flex items-center gap-2">
+            <ModeToggle />
+            <Button variant="ghost" asChild>
+              <Link href="/login">Sign in</Link>
+            </Button>
+            <Button asChild>
+              <Link href="/signup">Get started</Link>
+            </Button>
+          </div>
         </div>
       </header>
 

@@ -16,6 +16,7 @@ export function createClient() {
   if (!isSupabaseConfigured()) {
     throw new AppError(SUPABASE_NOT_CONFIGURED_MESSAGE, {
       code: "SUPABASE_NOT_CONFIGURED",
+      isOperational: true,
     });
   }
   return createBrowserClient(
