@@ -7,20 +7,20 @@ stocking, and servicing industrial equipment — pumps, valves,
 mechanical seals, heat exchangers, compressors, motors, bearings,
 instrumentation, and engineering services.
 
-> Sprint 1 status: platform foundation. No business features yet —
-> this codebase currently contains the application shell, quality
-> gates, testing frameworks, CI/CD, and the engine architecture that
-> every future module builds on.
+> Sprint 2 status: identity foundation. Companies can create a
+> workspace, sign in, and reach a private dashboard. The database
+> enforces multi-tenant isolation with Row Level Security. Business
+> modules (costing, pricing, CRM, …) arrive in the coming sprints.
 
 ## Technology
 
-| Layer      | Technology                                               |
-| ---------- | -------------------------------------------------------- |
-| Frontend   | Next.js (App Router), React, TypeScript, Tailwind CSS    |
-| UI kit     | shadcn/ui (components live in `src/components/ui`)       |
-| Backend    | Supabase (PostgreSQL, Auth, Storage) — wired in Sprint 2 |
-| Testing    | Vitest (unit), Playwright (end-to-end)                   |
-| Deployment | Vercel via GitHub Actions CI                             |
+| Layer      | Technology                                            |
+| ---------- | ----------------------------------------------------- |
+| Frontend   | Next.js (App Router), React, TypeScript, Tailwind CSS |
+| UI kit     | shadcn/ui (components live in `src/components/ui`)    |
+| Backend    | Supabase (PostgreSQL, Auth, Storage)                  |
+| Testing    | Vitest (unit), Playwright (end-to-end)                |
+| Deployment | Vercel via GitHub Actions CI                          |
 
 ## Getting started
 
@@ -39,6 +39,11 @@ npm run dev
 
 Open <http://localhost:3000> — you should see the FLOW360 landing page.
 
+To enable sign-up, sign-in, and the dashboard, connect a (free)
+Supabase project: follow
+[docs/guides/SUPABASE_SETUP.md](docs/guides/SUPABASE_SETUP.md)
+(~10 minutes, one time). Without it the public pages still work.
+
 ## Everyday commands
 
 | Command              | What it does                               |
@@ -55,7 +60,8 @@ Open <http://localhost:3000> — you should see the FLOW360 landing page.
 ## Project structure
 
 ```
-├── docs/               Product Bible: business rules and standards
+├── docs/               Product Bible: business rules, standards, guides
+├── supabase/           Database migrations (versioned SQL)
 ├── src/
 │   ├── app/            Pages and screens (what users see)
 │   ├── components/     Reusable UI building blocks
